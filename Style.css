@@ -1,0 +1,113 @@
+body {
+
+  background-color: #c5e6d7;
+  margin: 0;
+}
+
+.Container {
+  width: 80%;
+  margin: 0 auto;
+
+}
+
+header {
+  background: #5ebdaa;
+}
+.logo {
+  float: left;
+  width: 125px;
+  height: 75px;
+  padding: 10px 0;
+}
+header::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+/* no se como se hizo lo de arriba*/
+
+nav {
+  float: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 35px;
+
+  position: relative;
+}
+
+nav a {
+  color: #444;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Crimson Text"
+}
+
+nav a:hover {
+  color: black;
+}
+
+nav a::before {
+  content: "";
+  display: block;
+  height: 5px;
+  width: 0%;
+  background-color: #444;
+
+  position: absolute;
+  top: 0;
+transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+h1 {
+  text-align: center;
+  color: #444;
+  background: #5ebdaa;
+  box-shadow: 5px 10px #4f6e68;
+  font-size: 70px;
+  font-family: "Crimson Text"
+}
+
+
+#Barra {
+  list-style-type: none;
+  margin: 200spx;
+  padding: 20px;
+  overflow: hidden;
+
+}
+.barrita {
+display: inline;
+float: left;
+
+}
+.barrita a {
+  display: block;
+  padding: 8px;
+  background-color:#5ebdaa;
+}
+
+.Frase {
+  text-align: center;
+  font-family:"Crimson Text";
+}
+
+h4 {
+    color: Black;
+    background: #5ebdaa;
+    text-align: center;
+}
+p {
+  font-family:"Crimson Text";
+}
